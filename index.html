@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Mosaico - Filtros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>˙⋆✮Galeria de Imagens✮⋆˙</h1>
+        <p>Explore nossas imagens por categoria</p>
+    </header>
+    <nav class="filtros">
+        <button class="filtro ativo" data-filtro="todas">Todas</button>
+        <button class="filtro" data-filtro="cachorros">Cachorros</button>
+        <button class="filtro" data-filtro="gatos">Gatos</button>
+        <button class="filtro" data-filtro="aleatoria">Aleatórias</button>
+    </nav>
+    <p id="totalImagens" class="total"></p>
+    <main class="galeria">
+        <img src="assets/ImagensSelecionadas/1.jpg" alt="Asas" class="miniatura destaque" data-categoria="aleatoria" tabindex="0">
+        <img src="assets/ImagensSelecionadas/2º golden bone.jpg" alt="Golden boné" class="miniatura" data-categoria="cachorros" tabindex="0">
+        <img src="assets/ImagensSelecionadas/3º swag.jpg" alt="Gatinho Swag" class="miniatura" data-categoria="gatos" tabindex="0">
+        <img src="assets/ImagensSelecionadas/4º.jpg" alt="Cachorrinho olhando" class="miniatura horizontal" data-categoria="cachorros" tabindex="0">
+        <img src="assets/ImagensSelecionadas/5º rapper.jpg" alt="Gatinho Rapper" class="miniatura" data-categoria="gatos" tabindex="0">
+        <img src="assets/ImagensSelecionadas/6º Arianna pink.jpg" alt="Arianna Grande" class="miniatura vertical" data-categoria="aleatoria" tabindex="0">
+        <img src="assets/ImagensSelecionadas/7º.jpg" alt="Flor" class="miniatura horizontal" data-categoria="aleatoria" tabindex="0">
+        <img src="assets/ImagensSelecionadas/8º.jpg" alt="Gatinho Piscando" class="miniatura vertical" data-categoria="gatos" tabindex="0">
+        <img src="assets/ImagensSelecionadas/9º.jpg" alt="Cachorrinho bobinho" class="miniatura horizontal" data-categoria="cachorros" tabindex="0">
+        <img src="assets/ImagensSelecionadas/10º swag.jpg" alt="Swag" class="miniatura" data-categoria="aleatoria" tabindex="0">
+    </main>
+    <div id="modal" class="modal">
+        <button id="fechar" class="fechar">&times;</button>
+        <button id="anterior" class="navegacao anterior">&#10094;</button>
+        <div class="modal-conteudo">
+            <img src="" alt="Imagem Ampliada" id="imagensModal">
+            <div class="legenda">
+                <span id="contador"></span>
+                <span id="nomeImagem"></span>
+            </div>
+        </div>
+        <button id="proximo" class="navegacao proximo">&#10095;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
